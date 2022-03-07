@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoginPage from "./Components/LoginPage/LoginPage";
 import Register from "./Components/Register/Register";
 import ForgotPassword from "./Components/ForgotPassword/ForgotPassword";
+import User from "./Components/User/User";
 
 
 
@@ -14,6 +15,7 @@ function App() {
           <Route exact path="/" element={<LoginPage />} />
           <Route exact path="/register" element={<Register />} />
           <Route exact path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/user" element={<User />} />
         </Routes>
       </BrowserRouter>
     </div>
